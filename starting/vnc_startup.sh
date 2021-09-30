@@ -12,3 +12,9 @@ EOF
 chmod +x $HOME/.vnc/xstartup
 
 
+
+###########################################
+/usr/bin/supervisord -n
+
+
+
