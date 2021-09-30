@@ -7,7 +7,7 @@ echo $PASSWORD | vncpasswd -f > /root/.vnc/passwd
 chmod 600 /root/.vnc/passwd
 
 
-vncserver
+sudo vncserver
 vncserver -kill :1
 mv /root/.vnc/xstartup /root/.vnc/xstartup.bak
 cat <<EOF > /root/.vnc/xstartup
@@ -18,8 +18,8 @@ EOF
 chmod +x /root/.vnc/xstartup
 
 touch /root/.Xresources
-#sudo vncserver
-#websockify -D --web=/usr/share/novnc/  6901 localhost:5901
+sudo vncserver
+websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 
 ###########################################
 /usr/bin/supervisord -n
