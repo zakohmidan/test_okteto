@@ -3,12 +3,12 @@ export PASSWORD="123123123"
 echo "000000000000000000000000000000000000001111111111111111111111111111111111111"
 mkdir -p /root/.vnc/
 echo $PASSWORD | vncpasswd -f > /root/.vnc/passwd
-chmod 600 $HOME/.vnc/passwd
+chmod 600 /root/.vnc/passwd
 
 
 vncserver
 vncserver -kill :1
-mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+mv /root/.vnc/xstartup /root/.vnc/xstartup.bak
 cat <<EOF > /root/.vnc/xstartup
 #!/bin/bash
 xrdb /root/.Xresources
