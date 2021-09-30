@@ -33,4 +33,4 @@ EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
 USER 0
 #CMD ["/usr/sbin/sshd","-D"]
 #ENTRYPOINT [ "/usr/bin/tini", "--", "/dockerstartup/startup.sh" ]
-CMD ["/bin/bash", "/dockerstartup/vnc_startup.sh"]
+CMD ["/bin/bash", "/dockerstartup/vnc_0_startup.sh"]
