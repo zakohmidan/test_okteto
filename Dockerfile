@@ -18,6 +18,18 @@ ENV HOME=/headless \
     VNC_PW=vncpassword \
     VNC_VIEW_ONLY=false
 ### Envrionment config
+
+
+
+
+COPY ./starting/vnc_startup.sh "${STARTUPDIR}"/
+RUN chmod 755 -R "${STARTUPDIR}"
+
+
+
+
+
+
 EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
 
 #CMD ["/usr/sbin/sshd","-D"]
