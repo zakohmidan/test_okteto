@@ -2,6 +2,7 @@
 export USER="root"
 export PASSWORD="123123123"
 echo "000000000000000000000000000000000000001111111111111111111111111111111111111"
+touch /root/.Xauthority
 mkdir -p /root/.vnc/
 echo $PASSWORD | vncpasswd -f > /root/.vnc/passwd
 chmod 600 /root/.vnc/passwd
