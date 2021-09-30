@@ -18,8 +18,8 @@ EOF
 chmod +x /root/.vnc/xstartup
 
 touch /root/.Xresources
-sudo vncserver
-websockify -D --web=/usr/share/novnc/  6901 localhost:5901
+#sudo vncserver
+#websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 
 ###########################################
 /usr/bin/supervisord -n
