@@ -22,7 +22,7 @@ ENV HOME=/headless \
 
 
 
-COPY ./starting/vnc_startup.sh "${STARTUPDIR}"/
+COPY ./starting/vnc_0_startup.sh "${STARTUPDIR}"/
 RUN chmod 755 -R "${STARTUPDIR}"
 
 
