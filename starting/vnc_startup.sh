@@ -16,12 +16,12 @@ startxfce4 &
 EOF
 chmod +x $HOME/.vnc/xstartup
 
-
-
+touch $HOME/.Xresources
+vncserver
 #websockify -D --web=/usr/share/novnc/  6080 localhost:5901
 
 ###########################################
-/usr/bin/supervisord -n
+#/usr/bin/supervisord -n
 
 
 
