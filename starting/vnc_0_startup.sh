@@ -1,4 +1,5 @@
 #!/bin/bash
+export USER="root"
 export PASSWORD="123123123"
 echo "000000000000000000000000000000000000001111111111111111111111111111111111111"
 mkdir -p /root/.vnc/
@@ -17,7 +18,7 @@ EOF
 chmod +x /root/.vnc/xstartup
 
 touch /root/.Xresources
-vncserver
+sudo vncserver
 #websockify -D --web=/usr/share/novnc/  6080 localhost:5901
 
 ###########################################
